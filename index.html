@@ -12,91 +12,122 @@
 </head>
 
 <body>
-    <h1>Hello World!</h1>
-    <hr>
+    <header>
+        <h1>Hello World!</h1>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="#html">Learning HTML</a>
-            </li>
-            <li>
-                <a href="#vacation">Vacation Plans</a>
-            </li>
-        </ul>
-    </nav>
-
-    <hr>
-    <section id="html">
-        <h2>Using HTML</h2>
-        <p>This is my web page. Using resources from
-            <abbr title="Mozilla Developer Network">
-                <a href="https://developer.mozilla.org/">MDN</a></abbr>
-        </p>
-        <img src="img/html-logo.png" alt="HTML5 Logo" title="this is a HTML Logo" width="300" height="300">
-
-        <h3>third header text</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
-        <ol>
-            <li>Cras posuere risus quis egestas pretium.</li>
-            <li>Duis magna ante, pellentesque sed lorem non, rhoncus fermentum erat.</li>
-            <li>Nullam mi mauris, rutrum at felis tempor, eleifend facilisis leo.</li>
-        </ol>
-    </section>
+        <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Vacation Plans</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <hr>
+    <main>
+        <article id="html">
+            <h2>Using HTML</h2>
+            <p>This is my web page. Using resources from
+                <abbr title="Mozilla Developer Network">
+                    <a href="https://developer.mozilla.org/">MDN</a></abbr>
+            </p>
 
-    <section id="vacation">
-        <h2>Vacation Plans</h2>
-        <p>I want to travel in the near future, here are some places
-            <em>I'd really like to visit!</em>
-        </p>
-
-        <ul>
-            <li>
-                <h3>Hong Kong</h3>
-                <p><strong>Great food,</strong> love the aesthetic, improve my Cantonese</p>
-            </li>
-
-            <li>
-                <h3>Japan</h3>
-                <p>Also love the food, great sights to see, lots of activities to do</p>
-                <p>cool place in <abbr title="City in Japan">Tokyo</abbr> that I'd like to visit</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/html-logo.png" alt="HTML5 Logo" title="this is a HTML Logo" width="300" height="300">
                 <figure>
-                    <img src="img/golden-gai.png" alt="Golden Gai during the night"
-                        title="The neon lights make it look so pretty" width="640" height="440" loading="lazy">
-                    <figcaption>
-                        Golden Gai bars during the night
-                    </figcaption>
+                    <figcaption>An Example of HTML5 Code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </p>
                 </figure>
-                <address>Shinjuku Golden Gai <br>1 Chome-1-6 Kabukicho, Shinjuku City</address>
-            </li>
+            </section>
 
-            <li>
-                <!-- this is how we add a comment-->
-                <h3>Malaysia</h3>
-                <p>Once again the food, some of my family are there</p>
-            </li>
-        </ul>
+            <section>
+                <h3>third header text</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
+                <ol>
+                    <li>Cras posuere risus quis egestas pretium.</li>
+                    <li>Duis magna ante, pellentesque sed lorem non, rhoncus fermentum erat.</li>
+                    <li>Nullam mi mauris, rutrum at felis tempor, eleifend facilisis leo.</li>
+                </ol>
 
+                <aside>
+                    <details>
+                        <summary>Guess the <mark>number of hours</mark> this entire project will probably take</summary>
+                        <p>I work on it at <time datetime="13:00">1 pm</time> most weekdays for 2 hours before work.
+                            HTML project: roughly <time datetime="PT6H">6 hours</time>, full web project: roughly <time
+                                datetime="PT50H">50 hours?</time></p>
+                    </details>
+                </aside>
+            </section>
+        </article>
 
-        <h2>Places I don't want to go</h2>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>too too <strong>cold</strong></dd>
+        <hr>
 
-            <dt>South Pole</dt>
-            <dd><em>also</em> cold</dd>
+        <article id="vacation">
+            <h2>Vacation Plans</h2>
+            <p>I want to travel in the near future, here are some places
+                <em>I'd really like to visit!</em>
+            </p>
+            <section>
+                <ul>
+                    <li>
+                        <h3>Hong Kong</h3>
+                        <p><strong>Great food,</strong> love the aesthetic, improve my Cantonese</p>
+                    </li>
 
-            <dt>Venus</dt>
-            <dd>Opposite problem. too <strong>hot</strong></dd>
-        </dl>
-    </section>
+                    <li>
+                        <h3>Japan</h3>
+                        <p>Also love the food, great sights to see, lots of activities to do</p>
+                        <p>cool place in <abbr title="City in Japan">Tokyo</abbr> that I'd like to visit</p>
+                        <figure>
+                            <img src="img/golden-gai.png" alt="Golden Gai during the night"
+                                title="The neon lights make it look so pretty" width="640" height="440" loading="lazy">
+                            <figcaption>
+                                Golden Gai bars during the night
+                            </figcaption>
+                        </figure>
+                        <address>Shinjuku Golden Gai <br>1 Chome-1-6 Kabukicho, Shinjuku City</address>
+                    </li>
+
+                    <li>
+                        <!-- this is how we add a comment-->
+                        <h3>Malaysia</h3>
+                        <p>Once again the food, some of my family are there</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Places I don't want to go</h2>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>too too <strong>cold</strong></dd>
+
+                    <dt>South Pole</dt>
+                    <dd><em>also</em> cold</dd>
+
+                    <dt>Venus</dt>
+                    <dd>Opposite problem. too <strong>hot</strong></dd>
+                </dl>
+            </section>
+        </article>
+    </main>
     <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Brian Chan</a> &gt;&gt;&gt;
-    <p>
-        <a href="#">Back to Top</a>
-    </p>
+
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Brian Chan</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </footer>
 </body>
 
 </html>
